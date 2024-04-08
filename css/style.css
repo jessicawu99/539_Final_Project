@@ -1,0 +1,72 @@
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#coasters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-gap: 20px; /* Spacing between grid items */
+}
+
+.coaster {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.coaster:hover {
+    transform: translateY(-5px);
+}
+
+.coaster h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.coaster img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.coaster img:hover {
+    transform: scale(1.05);
+}
+
+.coaster-description {
+    color: #666;
+}
+
+
+@media screen and (max-width: 768px) {
+    #coasters {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #coasters {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
+
