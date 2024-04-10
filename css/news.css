@@ -1,20 +1,36 @@
+body {
+    background: rgb(248, 209, 191);
+}
 nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: "Dosis", serif;
+    font-size: large;
+    
 }
 header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     justify-content: flex-start;
+    background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac);
+}
+
+.about {
+    margin-top: 20px;
+    border: 2px solid #000;
 
 }
 
 h1 {
     text-align: center;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
 }
 
 .grid {
@@ -23,12 +39,13 @@ h1 {
     justify-items: center;
     align-items: center;
     grid-gap: 30px;
+    padding: 10px;
   }
 
 .grid img {
     max-width: 100%;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff;
 }
 
 .flip-card {
@@ -75,7 +92,7 @@ h1 {
     transform: rotateY(180deg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -85,7 +102,7 @@ h1 {
     }
   }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1200px) {
         .grid {
         grid-template-columns: repeat(3, 1fr);
         }
