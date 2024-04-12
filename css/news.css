@@ -1,5 +1,5 @@
 body {
-    background: rgb(248, 209, 191);
+    background: #ffdbe2;
 }
 nav {
     display: flex;
@@ -7,7 +7,7 @@ nav {
     text-align: center;
     font-family: "Dosis", serif;
     font-size: large;
-    
+    font-weight: bold;
 }
 header {
     display: flex;
@@ -16,7 +16,31 @@ header {
     align-items: center;
     padding: 20px;
     justify-content: flex-start;
-    background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac);
+    background: linear-gradient(#f4a598, #ff7c97, #ff99ac);
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f4a598, #fa89a0, #f7bebe);
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background: #fcb3c1;
+    transform: scale(1.1);
 }
 
 .about {
@@ -90,7 +114,38 @@ h1 {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    height: 105%;
   }
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+
+  .scroll-to-top-btn:hover {
+    background-color: #c44b63;
+  }
+  
 
   @media screen and (min-width: 800px) {
     .grid {
@@ -100,10 +155,17 @@ h1 {
         display: flex;
         justify-content: center;
     }
+    .scroll-to-top-btn {
+        width: 60px;
+        height: 60px;
+    }
   }
 
     @media screen and (min-width: 1200px) {
         .grid {
         grid-template-columns: repeat(3, 1fr);
+        }
+        .scroll-to-top-btn {
+            display: none;
         }
     }
