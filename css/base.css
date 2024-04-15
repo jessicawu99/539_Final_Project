@@ -61,6 +61,11 @@ nav a:hover {
     color: black;
 }
 
+.current-page:hover {
+    background: #1f1f1f;
+    color: white;
+}
+
 h1 {
     text-align: center;
     font-family: "Chicle", serif;
