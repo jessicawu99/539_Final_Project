@@ -1,0 +1,144 @@
+body {
+    background: #1f1f1f;
+    font-family: Rubik, sans-serif;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.3s;
+  }
+  
+  .skip-link:focus {
+    top: 10px;
+  }
+  
+  nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: "Dosis", serif;
+      font-size: large;
+      font-weight: bold;
+  }
+  
+  .current-page {
+    text-decoration: underline;
+    background: #1f1f1f;
+    color: white;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f4a598, #fa89a0, #f7bebe);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    background: #fcb3c1;
+    transform: scale(1.1);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: #f4a598;
+}
+
+  h2 {
+    font-family: Dosis, sans-serif;
+  }
+
+  .about {
+    margin-top: 20px;
+    border: 2px dotted white;
+    padding: 10px;
+    font-family: Rubik, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1 fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px;
+    padding: 10px;
+  }
+
+.grid img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 5px solid white;
+}
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    background-color: #f4a598;
+    color: black;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+
+  .scroll-to-top-btn:hover {
+    background-color: #c44b63;
+    color: white;
+  }
+
+  @media screen and (min-width: 800px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .scroll-to-top-btn {
+        width: 60px;
+        height: 60px;
+    }
+  }
+
+    @media screen and (min-width: 1200px) {
+        .grid {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        .scroll-to-top-btn {
+            display: none;
+        }
+    }

@@ -1,135 +1,6 @@
-body {
-    background: #ffdbe2;
-    font-family: Rubik, sans-serif;
-}
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: #1A1A1A;
-  color: white;
-  padding: 10px;
-  z-index: 100;
-  text-decoration: none;
-  transition: top 0.3s;
-}
-
-.skip-link:focus {
-  top: 10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Dosis", serif;
-    font-size: large;
-    font-weight: bold;
-}
-
-.current-page {
-  text-decoration: underline;
-  background: black;
-  color: white;
-}
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    justify-content: flex-start;
-    background: linear-gradient(#f4a598, #ff7c97, #ff99ac);
+    background-image: url("../images/cedarpoint.jpg");
 }
-
-nav a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #f4a598, #fa89a0, #f7bebe);
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    transition: transform 0.3s;
-}
-
-nav a:hover {
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    background: #fcb3c1;
-    transform: scale(1.1);
-    color: black;
-}
-
-.about {
-    margin-top: 20px;
-    border: 2px dotted #000;
-    padding: 10px;
-    font-family: Rubik, sans-serif;
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    font-family: "Chicle", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.8rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1 fr;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 30px;
-    padding: 10px;
-  }
-
-.grid img {
-    max-width: 100%;
-    border-radius: 8px;
-    border: 5px solid white;
-}
-
-  h2 {
-    font-family: Dosis, sans-serif;
-  }
-  button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .scroll-to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    color: white;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-    transition: opacity 0.3s, visibility 0.3s;
-    z-index: 1000;
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-  }
-
-  .scroll-to-top-btn:hover {
-    background-color: #c44b63;
-  }
 
 
   .coaster {
@@ -147,8 +18,8 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 103%;
-    height: 103%;
+    width: 103.5%;
+    height: 103.5%;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.8);
     transition: opacity 0.3s ease;
@@ -165,34 +36,13 @@ h1 {
 }
 
 .info {
-    color: white;
-    padding: 20px;
+  color: white;
+  padding: 20px;
 }
 
 .info h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
+
   
-
-  @media screen and (min-width: 800px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    .scroll-to-top-btn {
-        width: 60px;
-        height: 60px;
-    }
-  }
-
-    @media screen and (min-width: 1200px) {
-        .grid {
-        grid-template-columns: repeat(3, 1fr);
-        }
-        .scroll-to-top-btn {
-            display: none;
-        }
-    }

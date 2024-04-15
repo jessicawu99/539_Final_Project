@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/cedarpoint.jpg");
+}
+
+#maincontent {
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 0 20%;
+}
