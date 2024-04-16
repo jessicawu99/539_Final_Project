@@ -7,4 +7,9 @@ body {
   text-align: center;
   color: white;
   padding: 0 20%;
+  align-content: center;
+}
+
+.fun-fact {
+  border: 2px dotted white;
 }
