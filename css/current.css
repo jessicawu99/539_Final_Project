@@ -53,3 +53,14 @@ header {
   .flip-card-back p {
     padding: 0 20px;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flip-card-inner {
+      transition: none;
+    }
+  
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
