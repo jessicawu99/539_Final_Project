@@ -44,7 +44,7 @@ header {
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #da687f;
+    background-color: #1c1c1c;
     color: white;
     transform: rotateY(180deg);
     height: 103%;
